@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<title>Теги</title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+    <link type="text/css" rel="stylesheet" href="/html/css/materialize.css"  media="screen,projection"/>
+    <link rel="stylesheet" type="text/css" href="/html/css/main.css"/>
+    <link rel="stylesheet" type="text/css" href="/html/css/admin_style.css"/>
+</head>
+
+<body>
+    <div class="grad">
+        <div class="container">
+            <div class="fixedup"></div>
+            <div class="header">
+                <div class="headerlogo"><a href="/admin" class="no_underline">avtomon.com</a></div>
+                <div class="adminmenu">
+                    <ul>
+                        <li>
+                            <a href="/admin/posts" class="PTSR">Посты</a>
+                        </li>
+                        <li>
+                            <span class="separator">|</span>
+                            <a href="/admin/projects" class="PTSR">Проекты</a>
+                        </li>
+                        <li>
+                            <span class="separator">|</span>
+                            <a href="/admin/users" class="PTSR">Пользователи</a>
+                        </li>
+                        <li>
+                            <span class="separator">|</span>
+                            <a href="/admin/comments" class="PTSR">Комментарии</a>
+                        </li>
+                        <li>
+                            <span class="separator">|</span>
+                            <a href="/admin/tags" class="PTSR">Теги</a>
+                        </li>
+                        <li>
+                            <span class="separator">|</span>
+                            <a href="/admin/config" class="PTSR">Настройки</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="logout"><a href="#">Выйти →</a></div>
+            </div><!-- .header-->
+
+            <div class="content"> <!--style="background: white;"-->
+                <div id="main">
+                    <h2>Теги</h2>
+                    <a href="#" class="add icon big" title="Добавить тег"></a>
+                    <div class="tp">
+                        <table class="hoverable">
+                            <thead>
+                            <tr>
+                                <th data-field="tag">Тег</th>
+                                <th data-field="post_count">Количество постов</th>
+                                <th data-field="is_active" style="width: 15%;">Статус</th>
+                                <th data-field="in_interests" style="width: 15%;">В интересах</th>
+                                <th style="width: 5%;">Заблокировать</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr class="parent clone in_id_id">
+                                <td class="in_text_tag input-field"></td>
+                                <td class="in_text_post_count">0</td>
+                                <td class="in_class_is_active"></td>
+                                <td class="in_class_in_interests"></td>
+                                <td>
+                                    <div class="in_class_is_active icon" title="Изменить статус"></div>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div><!-- .content -->
+        </div><!-- .wrapper -->
+    </div>
+    <form class="popup add_tag" method="POST" phpClass="Tag" phpMethod="newTag" for="insert" style="height: 235px;">
+        <div class="header">
+            <span class="PTSR">Добавить тег</span><!--<a class="PTSR">регистрация</a>-->
+            <i class="mdi-navigation-close"></i>
+        </div>
+        <table class="login">
+            <tr>
+                <td>Тег</td>
+                <td class="input-field">
+                    <input type="text" id="tag" class="validate required" name="tag">
+                </td>
+            </tr>
+            <tr>
+                <td style="vertical-align: bottom">Добавить в интересы</td>
+                <td>
+                    <input type="checkbox" id="in_interests" name="in_interests" value="1">
+                    <label for="in_interests"></label>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <span class="login button waves-effect waves-light save" style="margin-top: 30px; float: right">Сохранить</span>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+<script src="/html/js/jquery-2.1.3.min.js"></script>
+<script type="text/javascript" src="/html/js/materialize.min.js"></script>
+<script src="/html/js/apply.ajax.js"></script>
+<script src="/html/js/auth.js"></script>
+<script src="/html/js/basic.js"></script>
+<script src="/html/js/jquery.myForm.js" defer></script>
+<script>
+    $( function ()
+    {
+        var b = $('body'),
+            a = $('.add_tag');
+
+        convertDateToClientForm();
+
+        Page('Tag');
+
+        $('.add').click( function ()
+        {
+            a.css('display', 'block');
+        });
+
+        $('.popup .mdi-navigation-close').click( function ()
+        {
+            a.css('display', 'none');
+        });
+
+        $('body').keyup( function (e)
+        {
+            if (e.keyCode == 27)
+            {
+                a.css('display', 'none');
+            }
+        });
+
+        $('body').on('click', '.save:not(.disabled)', function ()
+        {
+            $(this).addClass('disabled');
+            nativeSubmit($('form'), null,
+                    function (data)
+                    {
+                        a.css('display', 'none').find('input').val('');
+                        setMultiData(data, $('tr.parent.clone'));
+                    });
+        });
+
+        $('body').on('dblclick', '.in_text_tag', function ()
+        {
+            var val = $(this).text();
+            $(this).html('<input type="text" />').find('input').val(val).focus();
+        });
+
+        $('body').on('blur keyup', '.in_text_tag input', function (e)
+        {
+            if ((e.keyCode && e.keyCode == 13) || e.keyCode === undefined)
+            {
+                if ($(this).val())
+                {
+                    var self = $(this),
+                        params = {
+                            class: 'Tag',
+                            method: 'updateTag',
+                            method_params:
+                            {
+                                id: $(this).parents('tr').attr('id'),
+                                tag: $(this).val()
+                            }
+                        };
+                    request(params, true, 'POST', function (data)
+                    {
+                        if (data.success)
+                        {
+                            self.parent().text(self.val());
+                        }
+                    });
+                }
+                else
+                {
+                    $(this).formError('Поле тега не должно быть пустым');
+                }
+            }
+        });
+
+    });
+</script>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script src="/js/jquery-1.11.1.min.js"></script>
+    <link href="select2.css" rel="stylesheet"/>
+    <link href="/html/css/style.css" rel="stylesheet"/>
+    <script src="select2.js"></script>
+    <script src="/js/jquery.form.js"></script>
+    <script src="/js/myForm.js"></script>
+    <script src="/js/serialize.object.js"></script>
+    <script>
+        $(document).ready(function() { $(".e1").select2(); });
+    </script>
+</head>
+<body>
+    <form action="/phpinfo.php" method="post">
+        <select class="e1" multiple style="width: 300px" id="f" name="f">
+            <option value="AL" selected>Alabama</option>
+            <option value="WY">Wyoming</option>
+        </select>
+        <button>Отправить</button>
+    </form>
+</body>
+<script>
+    $(function ()
+    {
+        $('body').on('click', 'button', function ()
+        {
+            var params = $('form').serializeObject();
+            //$('form').ajaxSubmit(options);
+            $.ajax({
+                type: 'post',
+                url: "/phpinfo.php",
+                dataType: 'json',
+                data: {
+                    JSONData: JSON.stringify(params)
+                },
+                async: true,
+                success: function (data)
+                {
+                    alert('yes');
+                },
+                error: function (XMLHttpRequest, textStatus, errorThrown)
+                {
+                    $.colorbox({html: 'Произошла ошибка ' + textStatus});
+                }
+            });
+            return false;
+        });
+    });
+</script>
+</html>

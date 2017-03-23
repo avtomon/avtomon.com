@@ -1,0 +1,16 @@
+{
+    "require": {
+        "phpmailer/phpmailer": "^5.2",
+        "avtomon/MShell":"*"
+    },
+    "repositories": [
+	{
+	    "type": "git",
+    	    "url": "https://github.com/avtomon/MShell.git"
+	},
+	{
+	    "type": "git",
+    	    "url": "https://github.com/avtomon/_PDO.git"
+	}
+    ]
+}

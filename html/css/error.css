@@ -1,0 +1,50 @@
+#error_code {
+    font-size: 36px;
+    float: left;
+}
+
+#error {
+    margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+}
+
+#error > div {
+    background: white;
+    font-family: "PT Sans";
+}
+
+#error_description {
+    font-size: 52px;
+    font-style: italic;
+    float: right;
+}
+
+#error_description:before, #error_description:after {
+    font-style: italic;
+    font-size: 82px;
+    color: #E6E6E6;
+}
+
+#error_description:before {
+    content: '« ';
+}
+
+#error_description:after {
+    content: ' »';
+}
+
+.e403 {
+    width: 500px;
+}
+
+.e404 {
+    width: 650px;
+}
+.e50x {
+    width: 700px;
+}

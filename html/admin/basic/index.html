@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<title>Админка</title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+    <link type="text/css" rel="stylesheet" href="/html/css/materialize.min.css"  media="screen,projection"/>
+    <link rel="stylesheet" type="text/css" href="/html/css/main.css"/>
+    <link rel="stylesheet" type="text/css" href="/html/css/admin_style.css"/>
+</head>
+
+<body>
+    <div class="grad height100">
+        <div class="container">
+            <div class="fixedup"></div>
+            <div class="header">
+                <div class="headerlogo"><a href="/admin" class="no_underline">avtomon.com</a></div>
+                <div class="adminmenu">
+                    <ul>
+                        <li>
+                            <a href="/admin/comments" class="PTSR">Посты</a>
+                        </li>
+                        <li>
+                            <span class="separator">|</span>
+                            <a href="/admin/projects" class="PTSR">Проекты</a>
+                        </li>
+                        <li>
+                            <span class="separator">|</span>
+                            <a href="/admin/users" class="PTSR">Пользователи</a>
+                        </li>
+                        <li>
+                            <span class="separator">|</span>
+                            <a href="/admin/comments" class="PTSR">Комментарии</a>
+                        </li>
+                        <li>
+                            <span class="separator">|</span>
+                            <a href="/admin/tags" class="PTSR">Теги</a>
+                        </li>
+                        <li>
+                            <span class="separator">|</span>
+                            <a href="/admin/config" class="PTSR">Настройки</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="logout"><a href="#">Выйти →</a></div>
+            </div><!-- .header-->
+
+            <div class="content">
+                <table id="big_menu">
+                    <tr>
+                        <td>
+                            <div class="z-depth-1 users">
+                                <a href="/admin/users">
+                                    <span>Пользователи</span>
+                                </a>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="z-depth-1 posts">
+                                <a href="/admin/posts">
+                                    <span>Посты</span>
+                                </a>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="z-depth-1 projects">
+                                <a href="/admin/projects">
+                                    <span>Проекты</span>
+                                </a>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="z-depth-1 comments">
+                                <a href="/admin/comments">
+                                    <span>Комментарии</span>
+                                </a>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="z-depth-1 tags">
+                                <a href="/admin/tags">
+                                    <span>Теги</span>
+                                </a>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="z-depth-1 config">
+                                <a href="/admin/config">
+                                    <span>Настройки</span>
+                                </a>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div><!-- .content -->
+        </div><!-- .wrapper -->
+    </div>
+</body>
+<script src="/html/js/jquery-2.1.3.min.js"></script>
+<script type="text/javascript" src="/html/js/materialize.min.js"></script>
+<script src="/html/js/apply.ajax.min.js"></script>
+<script src="/html/js/auth.min.js"></script>
+</html>

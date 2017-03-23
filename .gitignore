@@ -1,0 +1,13 @@
+vendor/
+conf.ini
+blog.sql
+rss/
+schema.pdf
+sitemap.xml
+phpinfo.php
+photos/
+logs/
+files/
+tests/
+favicon.ico
+rss_logo.png
