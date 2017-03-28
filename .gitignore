@@ -11,3 +11,4 @@ files/
 tests/
 favicon.ico
 rss_logo.png
+composer.lock
