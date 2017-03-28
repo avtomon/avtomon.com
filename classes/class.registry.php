@@ -293,8 +293,9 @@ class Registry
                     return $value;
                 }
             }
-            header('Location: /error/404');
-            throw new ExitException();
+            //header('Location: /error/404');
+            //throw new ExitException();
+            return false;
         }
     }
 
@@ -453,6 +454,9 @@ class Registry
             throw new ExitException();
         }
         $source = self::getPageInfo($url);
+        if (!$source) {
+            return false;
+        }
         $is_granted = false;
         if (isset($source['level']) && is_array($source['level']))
         {

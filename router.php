@@ -44,11 +44,13 @@ try
     }
     if (isset($_REQUEST['page']))
     {
-        Registry::getPage($_REQUEST['page']);
+        if (!Registry::getPage($_REQUEST['page'])) {
+            Registry::executeAjax();
+        }
     }
     else
     {
-        Registry::executeAjax();
+
     }
     fastcgi_finish_request();
     $cache = MShell::create();
