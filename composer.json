@@ -1,16 +1,68 @@
 {
+	"name": "avtomon/avtomon.com",
+	"description": "My blog",
+	"type": "project",
+	"minimum-stability": "stable",
+	"config": {
+		"process-timeout": 1800
+	},
     "require": {
-        "phpmailer/phpmailer": "^5.2",
-        "avtomon/MShell":"*"
+        "phpmailer/phpmailer": "*",
+        "avtomon/MShell": "*",
+		"bower-asset/jQuery": "*",
+		"bower-asset/chosen": "*",
+		"bower-asset/ckeditor": "*",
+		"bower-asset/kcfinder": "*",
+		"bower-asset/jquery-cookie": "*",
+		"bower-asset/jquery-maskedinput": "*",
+		"avtomon/jQuery-MD5": "*",
+		"avtomon/pStrength": "*",
+		"christianbach/tablesorter": "*",
+		"avtomon/multifilter": "*",
+		"bower-asset/jquery-ui": "*",
+		"avtomon/SkipZ": "*",
+		"avtomon/notejs": "*",
+		"bower-asset/materialize": "*",
+		"avtomon/applyAjax.js": "*",
+		"avtomon/myForm": "*",
+		"bower-asset/html5shiv": "*"
     },
     "repositories": [
-	{
-	    "type": "git",
-    	    "url": "https://github.com/avtomon/MShell.git"
-	},
-	{
-	    "type": "git",
-    	    "url": "https://github.com/avtomon/_PDO.git"
-	}
+		{
+			"type": "git",
+			"url": "https://github.com/avtomon/MShell.git"
+		},
+		{
+			"type": "git",
+			"url": "https://github.com/avtomon/_PDO.git"
+		},
+		{
+			"type": "git",
+			"url": "https://github.com/avtomon/jQuery-MD5.git"
+		},
+		{
+			"type": "git",
+			"url": "https://github.com/avtomon/pStrength.git"
+		},
+		{
+			"type": "git",
+			"url": "https://github.com/avtomon/multifilter.git"
+		},
+		{
+			"type": "git",
+			"url": "https://github.com/avtomon/SkipZ.git"
+		},
+		{
+			"type": "git",
+			"url": "https://github.com/avtomon/notejs.git"
+		},
+		{
+			"type": "git",
+			"url": "https://github.com/avtomon/applyAjax.js.git"
+		},
+		{
+			"type": "git",
+			"url": "https://github.com/avtomon/myForm.git"
+		}
     ]
 }

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "eafcb30094b5c105803e400cee7b0a74",
+    "content-hash": "685c3ae5f8d28d0ee68576148a4f9a03",
     "packages": [
         {
             "name": "avtomon/MShell",
@@ -22,6 +22,18 @@
             "time": "2017-03-23T16:04:11+00:00"
         },
         {
+            "name": "avtomon/SkipZ",
+            "version": "v1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/avtomon/SkipZ.git",
+                "reference": "1ad97bf38352f801baabb2501622cce1c3ed5498"
+            },
+            "type": "project",
+            "description": "Managing the order of event handlers",
+            "time": "2017-03-28T10:54:04+00:00"
+        },
+        {
             "name": "avtomon/_PDO",
             "version": "v1.0",
             "source": {
@@ -32,6 +44,404 @@
             "type": "project",
             "description": "Yet another PHP PDO wrapper",
             "time": "2017-03-23T15:50:36+00:00"
+        },
+        {
+            "name": "avtomon/applyAjax.js",
+            "version": "v1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/avtomon/applyAjax.js.git",
+                "reference": "8963b92ff3464b70c4764807bff9171853bbd31e"
+            },
+            "type": "project",
+            "description": "jQuery templater",
+            "time": "2017-03-28T11:46:12+00:00"
+        },
+        {
+            "name": "avtomon/jQuery-MD5",
+            "version": "v1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/avtomon/jQuery-MD5.git",
+                "reference": "bbb38801f79bbdecbe385e653e3ce1aca8d79002"
+            },
+            "type": "project",
+            "description": "jQuery-MD5 fork",
+            "time": "2017-03-28T10:11:27+00:00"
+        },
+        {
+            "name": "avtomon/multifilter",
+            "version": "v1.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/avtomon/multifilter.git",
+                "reference": "74244fd99db122e51dec2dc667a82017d38bb7c4"
+            },
+            "type": "project",
+            "description": "multifilter fork",
+            "time": "2017-03-28T10:42:59+00:00"
+        },
+        {
+            "name": "avtomon/myForm",
+            "version": "v1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/avtomon/myForm.git",
+                "reference": "1f6afc47389d7728ee12e5bee33c6013b22097e4"
+            },
+            "type": "project",
+            "description": "Form submit ajax wrapper",
+            "time": "2017-03-28T11:53:24+00:00"
+        },
+        {
+            "name": "avtomon/notejs",
+            "version": "v1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/avtomon/notejs.git",
+                "reference": "be8a946be6befdad6b0919f04f8114b85fd12f63"
+            },
+            "type": "project",
+            "description": "Yet another balloon jquery plugin",
+            "time": "2017-03-28T11:07:02+00:00"
+        },
+        {
+            "name": "avtomon/pStrength",
+            "version": "v1.0.10",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/avtomon/pStrength.git",
+                "reference": "a4c7dd68bb0ec6fb4ff48b6423e298f8583c05ab"
+            },
+            "type": "project",
+            "description": "pStrength fork",
+            "time": "2017-03-28T10:25:04+00:00"
+        },
+        {
+            "name": "bower-asset/chosen",
+            "version": "v1.7.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/harvesthq/chosen-package.git",
+                "reference": "20457c69249226af89fda0b357591622b922b36a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/harvesthq/chosen-package/zipball/20457c69249226af89fda0b357591622b922b36a",
+                "reference": "20457c69249226af89fda0b357591622b922b36a",
+                "shasum": ""
+            },
+            "type": "bower-asset-library",
+            "extra": {
+                "bower-asset-main": [
+                    "chosen.jquery.js",
+                    "chosen.css",
+                    "chosen-sprite@2x.png",
+                    "chosen-sprite.png"
+                ],
+                "bower-asset-ignore": []
+            },
+            "license": [
+                "https://github.com/harvesthq/chosen/blob/master/LICENSE.md"
+            ],
+            "description": "Chosen is a JavaScript plugin that makes select boxes user-friendly. It is currently available in both jQuery and Prototype flavors.",
+            "keywords": [
+                "dropdown",
+                "form",
+                "input",
+                "multiselect",
+                "select",
+                "ui"
+            ]
+        },
+        {
+            "name": "bower-asset/ckeditor",
+            "version": "4.6.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ckeditor/ckeditor-releases.git",
+                "reference": "268078ab43195b6004d64bc8764c41f2f829640e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ckeditor/ckeditor-releases/zipball/268078ab43195b6004d64bc8764c41f2f829640e",
+                "reference": "268078ab43195b6004d64bc8764c41f2f829640e",
+                "shasum": ""
+            },
+            "type": "bower-asset-library",
+            "extra": {
+                "bower-asset-main": "./ckeditor.js"
+            },
+            "license": [
+                "For licensing, see LICENSE.md or http://ckeditor.com/license."
+            ],
+            "description": "JavaScript WYSIWYG web text editor.",
+            "keywords": [
+                "ckeditor",
+                "editor",
+                "fckeditor",
+                "html",
+                "javascript",
+                "richtext",
+                "text",
+                "wysiwyg"
+            ]
+        },
+        {
+            "name": "bower-asset/html5shiv",
+            "version": "3.7.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/aFarkas/html5shiv.git",
+                "reference": "ed28c56c071bddfe7d635ad88995674957a016be"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/aFarkas/html5shiv/zipball/ed28c56c071bddfe7d635ad88995674957a016be",
+                "reference": "ed28c56c071bddfe7d635ad88995674957a016be",
+                "shasum": ""
+            },
+            "type": "bower-asset-library",
+            "extra": {
+                "bower-asset-main": [
+                    "dist/html5shiv.js"
+                ],
+                "bower-asset-ignore": [
+                    "**/.*",
+                    "composer.json",
+                    "test",
+                    "build",
+                    "src",
+                    "build.xml"
+                ]
+            }
+        },
+        {
+            "name": "bower-asset/jquery",
+            "version": "3.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jquery/jquery-dist.git",
+                "reference": "77d2a51d0520d2ee44173afdf4e40a9201f5964e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jquery/jquery-dist/zipball/77d2a51d0520d2ee44173afdf4e40a9201f5964e",
+                "reference": "77d2a51d0520d2ee44173afdf4e40a9201f5964e",
+                "shasum": ""
+            },
+            "type": "bower-asset-library",
+            "extra": {
+                "bower-asset-main": "dist/jquery.js",
+                "bower-asset-ignore": [
+                    "package.json"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "keywords": [
+                "browser",
+                "javascript",
+                "jquery",
+                "library"
+            ]
+        },
+        {
+            "name": "bower-asset/jquery-cookie",
+            "version": "v1.4.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/carhartl/jquery-cookie.git",
+                "reference": "7f88a4e631aba8a8c688fd8999ce6b9bcfd50718"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/carhartl/jquery-cookie/zipball/7f88a4e631aba8a8c688fd8999ce6b9bcfd50718",
+                "reference": "7f88a4e631aba8a8c688fd8999ce6b9bcfd50718",
+                "shasum": ""
+            },
+            "require": {
+                "bower-asset/jquery": ">=1.2"
+            },
+            "type": "bower-asset-library",
+            "extra": {
+                "bower-asset-main": [
+                    "./jquery.cookie.js"
+                ],
+                "bower-asset-ignore": [
+                    "test",
+                    ".*",
+                    "*.json",
+                    "*.md",
+                    "*.txt",
+                    "Gruntfile.js"
+                ]
+            }
+        },
+        {
+            "name": "bower-asset/jquery-maskedinput",
+            "version": "1.4.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/digitalBush/jquery.maskedinput.git",
+                "reference": "f19728180c604c1b0c62d6aa97af262c0c04d71c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/digitalBush/jquery.maskedinput/zipball/f19728180c604c1b0c62d6aa97af262c0c04d71c",
+                "reference": "f19728180c604c1b0c62d6aa97af262c0c04d71c",
+                "shasum": ""
+            },
+            "require": {
+                "bower-asset/jquery": ">=1.8.3"
+            },
+            "type": "bower-asset-library",
+            "extra": {
+                "bower-asset-main": "./dist/jquery.maskedinput.js",
+                "bower-asset-ignore": [
+                    "**/.*",
+                    "node_modules",
+                    "bower_components",
+                    "spec",
+                    "lib"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "description": "jQuery Masked Input Plugin",
+            "keywords": [
+                "form",
+                "input",
+                "jquery",
+                "mask"
+            ]
+        },
+        {
+            "name": "bower-asset/jquery-ui",
+            "version": "1.12.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/components/jqueryui.git",
+                "reference": "44ecf3794cc56b65954cc19737234a3119d036cc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/components/jqueryui/zipball/44ecf3794cc56b65954cc19737234a3119d036cc",
+                "reference": "44ecf3794cc56b65954cc19737234a3119d036cc",
+                "shasum": ""
+            },
+            "require": {
+                "bower-asset/jquery": ">=1.6"
+            },
+            "type": "bower-asset-library",
+            "extra": {
+                "bower-asset-main": [
+                    "jquery-ui.js"
+                ],
+                "bower-asset-ignore": []
+            },
+            "license": [
+                "MIT"
+            ]
+        },
+        {
+            "name": "bower-asset/kcfinder",
+            "version": "3.20.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mikemix/kcfinder.git",
+                "reference": "ce71179d826adde70433c40ef7d1e723861b4321"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mikemix/kcfinder/zipball/ce71179d826adde70433c40ef7d1e723861b4321",
+                "reference": "ce71179d826adde70433c40ef7d1e723861b4321",
+                "shasum": ""
+            },
+            "type": "bower-asset-library",
+            "license": [
+                "GPLv3"
+            ],
+            "description": "Unofficial kcfinder port at github.com/mikemix/kcfinder"
+        },
+        {
+            "name": "bower-asset/materialize",
+            "version": "v0.98.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Dogfalo/materialize.git",
+                "reference": "2a27dc5fc5745001986055fdf3985aef32fa2def"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Dogfalo/materialize/zipball/2a27dc5fc5745001986055fdf3985aef32fa2def",
+                "reference": "2a27dc5fc5745001986055fdf3985aef32fa2def",
+                "shasum": ""
+            },
+            "require": {
+                "bower-asset/jquery": ">=2.1.1"
+            },
+            "type": "bower-asset-library",
+            "extra": {
+                "bower-asset-main": [
+                    "bin/materialize.css",
+                    "bin/materialize.js"
+                ],
+                "bower-asset-ignore": [
+                    "jade/",
+                    ".gitignore",
+                    "CNAME",
+                    "css/",
+                    "bower.json",
+                    "README.md",
+                    "images/",
+                    "js/jquery.timeago.js",
+                    "js/init.js",
+                    "js/prism.js",
+                    "res/",
+                    "sass/style.scss",
+                    "sass/ghpages-materialize.scss",
+                    "**/*.html",
+                    "**/*.zip",
+                    "**/*.txt",
+                    "sitemap.xml",
+                    "package.json",
+                    "Gruntfile.js"
+                ]
+            },
+            "description": "A modern responsive front-end framework based on Material Design",
+            "keywords": [
+                "css",
+                "design",
+                "framework",
+                "front-end",
+                "js",
+                "material",
+                "mobile-first",
+                "responsive",
+                "sass",
+                "ux"
+            ]
+        },
+        {
+            "name": "christianbach/tablesorter",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/akiyatkin/tablesorter.git",
+                "reference": "cff9cd482f5d3b0905494f77b5930d3a94bb4b5c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/akiyatkin/tablesorter/zipball/cff9cd482f5d3b0905494f77b5930d3a94bb4b5c",
+                "reference": "cff9cd482f5d3b0905494f77b5930d3a94bb4b5c",
+                "shasum": ""
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "time": "2016-09-02T11:31:54+00:00"
         },
         {
             "name": "phpmailer/phpmailer",

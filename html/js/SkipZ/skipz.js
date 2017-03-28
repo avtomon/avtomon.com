@@ -1,7 +1,3 @@
-/**
- * Created by Александр on 11.08.15.
- */
-
 var ep = [];
 
 $.fn.onZ = function (events, selector, callback, priority)
